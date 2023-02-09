@@ -156,6 +156,11 @@ body {
     font-family: Inter;
 }
 
+.wrapper {
+     top: 0px;
+    position: absolute;
+}
+
 header {
     position: fixed;
     z-index: 1111;
