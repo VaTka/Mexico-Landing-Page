@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <title>Title</title>
+    <link rel="stylesheet" type="text/css" href="style.css"/>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+</head>
+<body>
+<div class="wrapper">
+    <header>
+        <div class="header">
+            <div class="container flex header_cont">
+                <a href="#">
+                    <img src="img/Logo.png" alt="logo">
+                </a>
+                <div class="register flex">
+                    <div>
+                        <a href="#" class="link_text underline mr">Acceder</a>
+                    </div>
+                    <div>
+                        <a href="#" class="register_btn link_text ">Registrate <span class="flare"></span></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container flex flex_end">
+            <div class="special flex">
+                <span>Deposito minimo</span>
+                <span> 500 MXN</span>
+            </div>
+        </div>
+    </header>
+
+    <div class="slider">
+        <div class="max_block slider_cont">
+            <div class="relative slider_img">
+                <img name="slideBg" src="img/football%20stadium.png" class="adaptive_img ">
+                <div class="container adaptive_img">
+                    <img name="slide" src="img/soccer%20fans.png" class="absolute people">
+                </div>
+                <img src="img/banner_dark_frame.png" class="adaptive_img zero absolute">
+
+            </div>
+
+
+            <div class="absolute max_block zero slider_text_top">
+                <div class="container">
+
+                    <div class="flex">
+
+                        <div class=" slider_media_text">
+                            <div class="slider_text flex">
+                                <span>COMBOBOOST</span>
+                                <span>hasta el 100%</span>
+                                <span>en apuestas combinadas</span>
+                            </div>
+                            <a href="#" class="register_btn link_text slide_button btn_shadow">Regístrate<span
+                                    class="flare"></span></a>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+        <div class="dots-container">
+            <span class="dot active" data-slide="0"></span>
+            <span class="dot" data-slide="1"></span>
+            <span class="dot" data-slide="2"></span>
+            <span class="dot" data-slide="3"></span>
+        </div>
+
+        <div class="absolute zero max_block main_text_top">
+            <div class="container main_text flex">
+                <span>Bono de primer</span>
+                <span class="left_75">depósito hasta</span>
+                <span>40 000 MXN</span>
+            </div>
+        </div>
+    </div>
+
+    <footer class="relative">
+        <div class="search">
+            <div class="container">
+                <div class="search_line flex">
+                    <a href="#">
+                        <img src="img/Logo.png" alt="logo">
+                    </a>
+                    <div class="main_search_input">
+                        <div class="search_item">
+                            <input type="text" value="" placeholder="Correo electronico">
+                        </div>
+                        <button class="main_search_button">Suscríbete</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="footer_line flex">
+                <a href="#"><img src="img/VISA.png"></a>
+                <a href="#"><img src="img/MASTERCARD.png"></a>
+                <a href="#"><img src="img/PAYSAFE.png"></a>
+                <a href="#"><img src="img/SKRILL.png"></a>
+                <a href="#"><img src="img/BITCOIN.png"></a>
+                <a href="#"><img src="img/LITECOIN.png"></a>
+                <a href="#"><img src="img/ETHEREUM.png"></a>
+                <a href="#"><img src="img/USDC.png"></a>
+                <a href="#"><img src="img/BINANCE.png"></a>
+                <a href="#"><img src="img/CARDANO.png"></a>
+                <a href="#"><img src="img/RIPPLE.png"></a>
+                <a href="#"><img src="img/TETHER.png"></a>
+                <a href="#"><img src="img/ASTROPAY.png"></a>
+            </div>
+        </div>
+
+    </footer>
+</div>
+<script>
+    var i = 0;
+    var images = [];
+    var imagesBg = [];
+    var time = 5000;
+
+    images[0] = 'img/soccer%20fans.png'
+    images[1] = 'img/girl.png'
+
+    imagesBg[0] = 'img/football%20stadium.png'
+    imagesBg[1] = 'img/football%20stadium.png'
+
+    function changeImg() {
+        document.slide.src = images[i]
+        document.slideBg.src = imagesBg[i]
+
+        if (i < images.length - 1){
+            i++
+        } else {
+            i = 0;
+        }
+
+        setTimeout("changeImg()", time);
+    }
+
+    window.onload = changeImg;
+</script>
+</body>
+</html>

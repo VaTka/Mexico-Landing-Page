@@ -1,0 +1,571 @@
+@font-face {
+    font-family: 'InterBold';
+    src: url('fonts/Inter-Bold.otf') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'InterBoldItalic';
+    src: url('fonts/Inter-BoldItalic.otf') format('woff');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'InterBlackItalic';
+    src: url('fonts/Inter-BlackItalic.otf') format('woff');
+    font-weight: 900;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'InterBlack';
+    src: url('fonts/Inter-Black.otf') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'InterExtraLightItalic';
+    src: url('fonts/Inter-ExtraLightItalic.otf') format('woff');
+    font-weight: 200;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'InterExtraBoldItalic';
+    src: url('fonts/Inter-ExtraBoldItalic.otf') format('woff');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'InterExtraBold';
+    src: url('fonts/Inter-ExtraBold.otf') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'InterExtraLight';
+    src: url('fonts/Inter-ExtraLight.otf') format('woff');
+    font-weight: 200;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'InterLight';
+    src: url('fonts/Inter-Light.otf') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'InterMediumItalic';
+    src: url('fonts/Inter-MediumItalic.otf') format('woff');
+    font-weight: 500;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'InterMedium';
+    src: url('fonts/Inter-Medium.otf') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'InterItalic';
+    src: url('fonts/Inter-Italic.otf') format('woff');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'InterLightItalic';
+    src: url('fonts/Inter-LightItalic.otf') format('woff');
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'InterRegular';
+    src: url('fonts/Inter-Regular.otf') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'InterSemiBoldItalic';
+    src: url('fonts/Inter-SemiBoldItalic.otf') format('woff');
+    font-weight: 600;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'InterSemiBold';
+    src: url('fonts/Inter-SemiBold.otf') format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'InterThinItalic';
+    src: url('fonts/Inter-ThinItalic.otf') format('woff');
+    font-weight: 100;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'InterThin';
+    src: url('fonts/Inter-Thin.otf') format('woff');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Inter V';
+    src: url('fonts/Inter-V.ttf') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+body {
+    background-color: #293b2b;
+    margin: 0px;
+    font-family: Inter;
+}
+
+header {
+    position: fixed;
+    z-index: 1111;
+    width: 100%;
+}
+
+.header {
+    background: linear-gradient(0deg, rgba(22, 26, 22, 0) -37.5%, #161A16 68%);
+    mix-blend-mode: normal;
+}
+
+.special {
+    flex-direction: column;
+    align-items: center;
+    font-family: InterBoldItalic;
+    font-size: 20px;
+    box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.6);
+    border-radius: 0px 0px 25.8px 25.8px;
+    background: #FFFFFF;
+    max-width: 215px;
+    padding: 16px 23px;
+}
+
+.special span:last-child {
+    font-size: 28px;
+}
+
+footer {
+    top: 187px;
+    padding: 0px 0px 60px 0px;
+}
+
+header img {
+    margin: 17px 0px 17px 0px;
+}
+
+.flex {
+    display: flex;
+}
+
+.flex_end {
+    justify-content: flex-end;
+}
+
+.link_text {
+    text-decoration: none;
+    color: white;
+    font-family: InterLight;
+}
+
+.underline {
+    text-decoration: underline;
+}
+
+.mr {
+    margin-right: 19px;
+}
+
+.adaptive_img {
+    max-width: 100%;
+}
+
+.absolute {
+    position: absolute;
+}
+
+.relative {
+    position: relative;
+}
+
+.zero {
+    left: 0px;
+    top: 0px;
+}
+
+.max_block {
+    width: 100%;
+}
+
+.left_75 {
+    position: relative;
+    left: 75px;
+}
+
+.btn_shadow {
+    box-shadow: 0px 5px 13px -14px rgba(41, 59, 43, 0.5);
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 1180px;
+}
+
+.header_cont {
+    justify-content: space-between;
+}
+
+.register {
+    align-items: center;
+}
+
+.register_btn {
+    display: inline-block;
+    padding: 6px 24px;
+    background: linear-gradient(102.12deg, #63D737 7.53%, #058048 98.25%);
+    border-radius: 100px;
+    position: relative;
+    overflow-x: hidden;
+    transition: 1s;
+}
+.register_btn:hover {
+    transition: 1s;
+    box-shadow: 0px 5px 13px -5px #63D737;
+}
+
+.register_btn .flare {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 45px;
+    transform: skewX(-45deg);
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.4));
+    animation: flareAnimation 2s infinite linear;
+}
+
+@keyframes flareAnimation {
+    0% {
+        left: -50%;
+    }
+    100% {
+        left: 150%;
+    }
+}
+
+.main_text {
+    color: white;
+    font-family: InterBoldItalic;
+    font-size: 43.5572px;
+    line-height: 53px;
+    flex-direction: column;
+}
+
+.main_text_top {
+    margin-top: 7%;
+}
+
+.main_text span {
+    text-shadow: 2px 2px 12px rgba(0, 0, 0, 0.6);
+}
+
+.main_text span:last-child {
+    font-size: 56.6243px;
+}
+
+.slider_img img:last-child{
+    height: 100%;
+}
+
+.people {
+    top: 0px;
+    right: 0px;
+}
+
+.slider_cont {
+    overflow: hidden
+}
+
+.slider_text {
+    flex-direction: column;
+    color: white;
+    font-family: InterBold;
+    font-size: 32px;
+    line-height: 120%;
+    text-shadow: 2px 2px 12px rgba(0, 0, 0, 0.6);
+}
+
+.slider_text span {
+    width: max-content;
+    text-shadow: 2px 2px 12px rgba(0, 0, 0, 0.6);
+}
+
+.slider_text_top {
+    margin-top: 20%;
+}
+
+.slide_button {
+    font-family: InterBold;
+    font-size: 36px;
+    line-height: 148.9%;
+    position: relative;
+    top: 22px;
+    padding: 14px 125px;
+}
+
+.search {
+    position: relative;
+    bottom: 90px;
+}
+
+.search_line {
+    align-items: center;
+    justify-content: space-between;
+}
+
+.main_search_input {
+    width: 82%;
+    display: flex;
+    flex-direction: row;
+    background: linear-gradient(102.12deg, #63D737 7.53%, #058048 98.25%);
+    border-radius: 99.1525px;
+    padding: 2px;
+}
+
+.search_item {
+    width: 100%;
+}
+
+.search_item input {
+    position: relative;
+    float: left;
+    border: none;
+    width: 100%;
+    padding: 7px 24px;
+    border-radius: 84.7925px;
+    z-index: 10;
+    outline: none;
+    font-family: InterMedium;
+    font-size: 17.1864px;
+    line-height: 147.83%;
+}
+
+.search_item input::placeholder {
+    color: #D9D9D9;
+    font-family: InterMedium;
+    font-size: 17.1864px;
+    line-height: 147.83%;
+}
+
+.main_search_button {
+    position: relative;
+    background-color: rgba(255, 255, 128, 0);
+    border-radius: 99.1525px;
+    padding: 0px 50px 0px 100px;
+    right: 0px;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-family: InterMedium;
+    font-size: 17.1864px;
+    line-height: 147.83%;
+}
+
+.footer_line {
+    position: relative;
+    flex-flow: wrap;
+}
+
+.footer_line a {
+    margin: 7px 40px;
+}
+
+@media (max-width: 1200px) {
+    .container {
+        max-width: 970px;
+    }
+
+    .main_text {
+        font-size: 20px;
+        line-height: 30px;
+    }
+
+    .main_text span:last-child {
+        font-size: 30px;
+    }
+
+    .slider_text_top{
+        margin-top: 20%;
+    }
+
+    .slider_text {
+        max-width: 200px;
+        font-size: 18px;
+    }
+
+    .slide_button {
+        padding: 5px 50px;
+        font-size: 18px;
+        line-height: 148.9%;
+    }
+}
+
+@media (max-width: 1024px) {
+    .container {
+        max-width: 320px;
+    }
+
+    .header_cont img {
+        height: 18px;
+        margin: 5px 0px;
+    }
+
+    .header_cont a {
+        font-size: 10px;
+        padding: 4px 16px;
+    }
+
+    .register div:first-child {
+        display: none;
+    }
+
+    .special {
+        flex-direction: row;
+        font-size: 10px;
+        padding: 6px 32px;
+        border-radius: 0px 0px 13.32px 13.32px;
+    }
+
+    .special span:last-child {
+        font-size: 10px;
+        margin-left: 3px;
+    }
+
+    .flex_end {
+        justify-content: center;
+    }
+
+    .slider_cont {
+        overflow: auto;
+    }
+
+    .slider_img{
+        margin-top: 140px;
+    }
+
+    .people {
+        max-width: 100%;
+    }
+
+    .main_text {
+        position: relative;
+        left: -20px;
+        align-items: center;
+    }
+
+    .main_text_top {
+        margin-top: 70px;
+    }
+
+    .left_75 {
+        left: 25px;
+    }
+
+    .slider_media_text {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .slider_text_top {
+        margin-top: 180px;
+    }
+
+    .slider_text {
+        justify-content: space-around;
+        flex-direction: row;
+        font-size: 13px;
+        flex-wrap: wrap;
+    }
+    .slider_text span{
+        margin: 0px 1px;
+    }
+
+    .slide_button {
+        top: 10px
+    }
+
+    .search_line img {
+        display: none;
+    }
+
+    .main_search_input {
+        width: 100%;
+    }
+
+    .search_item input {
+        padding: 5px 14px;
+    }
+
+    .search_item input::placeholder {
+        color: #D9D9D9;
+        font-family: InterMedium;
+        font-size: 10px;
+        line-height: 50%;
+    }
+
+    .main_search_button {
+        font-family: InterLight;
+        font-size: 10px;
+        padding: 10px 20px 10px 40px;
+    }
+
+    .footer_line a {
+        margin: 0px 8px;
+    }
+
+    .footer_line img {
+        height: 10px;
+    }
+
+}
+
